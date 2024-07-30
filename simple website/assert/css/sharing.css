@@ -114,6 +114,20 @@ header h1:hover, h2:hover {
 main{
     min-height: 38vh;
     padding: 20px;
+    transition: transform 0.5s, color 0.5s; /* Hiệu ứng chuyển đổi */
+}
+main #sharing , #sharing a{
+    display: block;
+    padding: 5px;
+    background: #444444;
+    color: white;
+    text-decoration: none;
+    
+}
+
+main #sharing a:hover{
+    transform: scale(1.1); /* Chữ lớn hơn khi hover */
+    color: #FFD700; /* Đổi màu chữ khi hover */
 }
 aside{
     padding: 20px;
