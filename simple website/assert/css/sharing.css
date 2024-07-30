@@ -119,6 +119,7 @@ main{
 main #sharing , #sharing a{
     display: block;
     padding: 5px;
+    border-radius: 10px;
     background: #444444;
     color: white;
     text-decoration: none;
@@ -127,8 +128,13 @@ main #sharing , #sharing a{
 
 main #sharing a:hover{
     transform: scale(1.1); /* Chữ lớn hơn khi hover */
-    color: #FFD700; /* Đổi màu chữ khi hover */
+    color: red; /* Đổi màu chữ khi hover */
+    width: 755px;
+    background: white;
+    text-transform: uppercase;
+    /* text-transform: initial; */
 }
+
 aside{
     padding: 20px;
     border-radius: 10px;

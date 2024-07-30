@@ -17,7 +17,7 @@ header {
     animation: fadeIn 2s forwards;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Hiệu ứng đổ bóng cho chữ */
     transition: transform 0.5s, color 0.5s; /* Hiệu ứng chuyển đổi */
-    
+
 }
 @keyframes fadeIn {
     to {
@@ -110,16 +110,34 @@ header h1:hover, h2:hover {
     transform: scale(1.1); /* Chữ lớn hơn khi hover */
     color: #FFD700; /* Đổi màu chữ khi hover */
 }
-header h1, h2{
-    display: inline-block;
-}
+
 main{
-    min-height: 38vh;
+    min-height: 58vh;
     padding: 20px;
+    transition: transform 0.5s, color 0.5s; /* Hiệu ứng chuyển đổi */
 }
+main #sharing , #sharing a{
+    display: block;
+    padding: 5px;
+    border-radius: 10px;
+    background: #444444;
+    color: white;
+    text-decoration: none;
+    
+}
+
+main #sharing a:hover{
+    transform: scale(1.1); /* Chữ lớn hơn khi hover */
+    color: red; /* Đổi màu chữ khi hover */
+    width: 755px;
+    background: white;
+    text-transform: uppercase;
+    /* text-transform: initial; */
+}
+
 aside{
     padding: 20px;
-    border-radius: 7px;
+    border-radius: 10px;
     background: #eeeeee;
 }
 footer{
@@ -164,23 +182,12 @@ footer ul li a:hover{
 .flex.flex3{
     flex:3;
 }
-img{
-    width: 85%;
-    border: 5px solid #999999;
-    border-radius: 7px;
-    cursor: pointer;
-}
-.block{
-    
-    padding: 20px;
-}
-
-  
-  .example-2 {
+.example-2 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
   }
   .example-2 .icon-content {
     margin: 0 10px;
@@ -270,6 +277,103 @@ img{
   .example-2 .icon-content a[data-social="facebook"] ~ .tooltip {
     background-color: #3B5998;
   }
+form{
+    border: 3px solid black;
+    background: gray;
+    border-radius: 7px;
+    width: 100%;
+    /* height: 90%; */
+}
+form input[type=text],form input[type=email]{
+  font-family: "SF Pro";
+  max-width: 250px;
+  width: 100%;
+  padding: 0.875rem;
+  font-size: 1rem;
+  border: 1.5px solid #000;
+  border-radius: 0.5rem;
+  box-shadow: 2.5px 3px 0 #000;
+  /* outline: none; */
+  transition: ease 0.25s;
+}
+form textarea{
+  font-family: "SF Pro";
+  max-width: 670px;
+  width: 100%;
+  padding: 0.875rem;
+  font-size: 1rem;
+  
+  border: 1.5px solid #000;
+  border-radius: 0.5rem;
+  box-shadow: 2.5px 3px 0 #000;
+  /* outline: none; */
+  transition: ease 0.25s;
+  
+}
+
+form input[type=text]:focus,form input[type=email]:focus,form textarea:focus{
+outline: none;
+box-shadow: 5.5px 7px 0 black;
+}
+button {
+    font-family: inherit;
+    font-size: 14px;
+    background: linear-gradient(to bottom, #4dc7d9 0%,#66a6ff 100%);
+    color: white;
+    padding: 0.8em 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+  }
+  
+  button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  button span {
+    display: block;
+    margin-left: 0.4em;
+    transition: all 0.3s;
+  }
+  
+  button svg {
+    width: 18px;
+    height: 18px;
+    fill: white;
+    transition: all 0.3s;
+  }
+  
+  button .svg-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 0.5em;
+    transition: all 0.3s;
+  }
+  
+  button:hover .svg-wrapper {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  button:hover svg {
+    transform: rotate(45deg);
+  }
+  
+  
 @media only screen and (max-width:768px){
     .flexbox,
     .fex{
