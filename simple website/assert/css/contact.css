@@ -282,8 +282,10 @@ form{
     background: gray;
     border-radius: 7px;
     width: 100%;
+    color: white;
     /* height: 90%; */
 }
+
 form input[type=text],form input[type=email]{
   font-family: "SF Pro";
   max-width: 250px;
